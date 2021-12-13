@@ -1,0 +1,32 @@
+Active-HDL 11.1.262.7351 2021-12-12 22:42:56
+
+Elaboration top modules:
+Architecture                  GAME(GAME)
+
+
+-----------------------------------------------------------------------------------------------
+Entity   | Architecture | Library       | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------
+GAME     | GAME         | mario_segundo |      | 11.1.262.7351 (Windows) | -O3
+STAGE    | STAGE        | mario_segundo |      | 11.1.262.7351 (Windows) | -O3
+MARIO    | MARIO        | mario_segundo |      | 11.1.262.7351 (Windows) | -O3
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+VHDL Package            | Library       | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------
+standard                | std           |      |                         | <unavailable>
+TEXTIO                  | std           |      |                         | <unavailable>
+std_logic_1164          | ieee          |      |                         | <unavailable>
+std_logic_arith         | ieee          |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED      | ieee          |      |                         | <unavailable>
+pkg                     | mario_segundo |      |                         | <unavailable>
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+Library                 | Comment
+-----------------------------------------------------------------------------------------------
+ieee                    | Standard IEEE packages library
+mario_segundo           | None
+std                     | Standard VHDL library
+-----------------------------------------------------------------------------------------------

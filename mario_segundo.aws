@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+mario_segundo=.\mario_segundo\mario_segundo.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+mario_segundo=1

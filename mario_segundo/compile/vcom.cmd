@@ -1,0 +1,1 @@
+-w -erf C:/My_Designs/mario_segundo/mario_segundo/compile/mario_segundo.erf -d C:/My_Designs/mario_segundo/mario_segundo/compile -s C:/My_Designs/mario_segundo/library.cfg -j C:/My_Designs/mario_segundo/mario_segundo/projlib.cfg -work mario_segundo -O3 -e 100 -work mario_segundo -2002 C:/My_Designs/mario_segundo/mario_segundo/src/MARIO.vhd 
