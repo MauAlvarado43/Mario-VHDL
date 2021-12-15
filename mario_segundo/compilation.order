@@ -1,4 +1,4 @@
 .\src\MARIO.vhd
 .\src\STAGE.vhd
-.\src\GAME.vhd
 .\src\TURTLE.vhd
+.\src\GAME.vhd

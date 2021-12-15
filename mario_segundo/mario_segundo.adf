@@ -32,12 +32,12 @@ Selected=
 [Files]
 /MARIO.vhd=-1
 /STAGE.vhd=-1
-/GAME.vhd=-1
 /TURTLE.vhd=-1
+/GAME.vhd=-1
 
 [Files.Data]
 .\src\MARIO.vhd=VHDL Source Code
 .\src\STAGE.vhd=VHDL Source Code
-.\src\GAME.vhd=VHDL Source Code
 .\src\TURTLE.vhd=VHDL Source Code
+.\src\GAME.vhd=VHDL Source Code
 

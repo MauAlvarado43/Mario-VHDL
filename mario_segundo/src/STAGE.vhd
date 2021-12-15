@@ -32,7 +32,7 @@ architecture STAGE of STAGE is
 	constant STAGE3: STD_LOGIC_VECTOR(4 downto 0):= "00001";
 	constant STAGE4: STD_LOGIC_VECTOR(4 downto 0):= "00000";
 	constant STAGE5: STD_LOGIC_VECTOR(4 downto 0):= "00001";
-	constant STAGE6: STD_LOGIC_VECTOR(4 downto 0):= "00111";
+	constant STAGE6: STD_LOGIC_VECTOR(4 downto 0):= "00011";
 	constant STAGE7: STD_LOGIC_VECTOR(4 downto 0):= "00001";
 	constant STAGE8: STD_LOGIC_VECTOR(4 downto 0):= "00001";
 	constant STAGE9: STD_LOGIC_VECTOR(4 downto 0):= "00001";

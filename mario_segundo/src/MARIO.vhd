@@ -63,11 +63,10 @@ begin
 			-- Si hay colision debajo de Mario, entonces deja de caer
 			if BOTTOM_COLLISION = '1' then
 				FALL_COUNT <= 0;
-				FALL <= '0';	
 			end if;	 
 			
 			-- Si no cae Mario, entonces puede saltar
-			if FALL = '0' and FALL_COUNT < 3 then 	 
+			if FALL = '0' and FALL_COUNT < 4 then 	 
 				
 				-- Si salta, entonces aumentamos el contador auxiliar de gravedad	
 				if JUMP = '1' and TOP_COLLISION = '0' then
@@ -80,20 +79,10 @@ begin
 				
 			-- Si esta cayendo, entonces el contador disminuye  
 			elsif FALL = '1' and FALL_COUNT > 0 and BOTTOM_COLLISION = '0' then 
-	
 				FALL_COUNT <= FALL_COUNT - 1;
 				
 			end if;
-			
-			-- Cuando el contador auxiliar vale 4, entonces Mario empieza a caer
-			if FALL_COUNT = 3 then
-				FALL <= '1';													
-			
-			-- Si el contador es igual a 1, entonces Mario deja de caer
-			elsif FALL_COUNT = 1 then
-				FALL <= '0';
-			end if;			
-			
+					
 		end if;	 
 		
 	end process;
@@ -138,7 +127,7 @@ begin
 		
 	end process;
 	
-	process (CLR, STATE, JUMP, FALL, BOTTOM_COLLISION, TOP_COLLISION, STAGE) begin
+	process (CLR, STATE, JUMP, FALL, BOTTOM_COLLISION, TOP_COLLISION, STAGE, FALL_COUNT) begin
 		
 		--if CLR = '1' then
 			
@@ -146,6 +135,15 @@ begin
 			--NEXT_STATE <= s4;	
 		
 		-- elsif
+			
+		-- Cuando el contador auxiliar vale 4, entonces Mario empieza a caer
+		if FALL_COUNT = 4 then
+			FALL <= '1';													
+		
+		-- Si el contador es igual a 1, entonces Mario deja de caer
+		elsif FALL_COUNT = 0 then
+			FALL <= '0';
+		end if;	
 		
 		-- Si hay colision debajo y Mario no salta o cae, entonces se mantiene en su posicion actual
 		if BOTTOM_COLLISION = '1' and (JUMP = '0' or FALL = '1') then 
@@ -155,7 +153,7 @@ begin
 		-- Si hay colision encima y no hay colision debajo y Mario salta, entonces comienza a caer
 		elsif TOP_COLLISION = '1' and JUMP = '1' and BOTTOM_COLLISION = '0' then
 			FALL <= '1';
-			NEXT_STATE <= STATE;																  
+			NEXT_STATE <= STATE;
 			
 		-- Si hay colision encima y hay colision, entonces Mario se mantiene en su posicion y no cae
 		elsif TOP_COLLISION = '1' and JUMP = '1' and BOTTOM_COLLISION = '1'	then
