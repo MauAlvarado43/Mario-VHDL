@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;  
 
+
+-- Tipo de dato "escenario" que permite controlar la ventana visible en los leds
 package pkg is
   type STAGE_BLOCK is array (0 to 5) of std_logic_vector(4 downto 0);
 end package;
@@ -9,10 +11,10 @@ end package;
 package body pkg is
 end package body;  
 
-library IEEE;
+library IEEE;					 
+library work;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all; 
-library work;
 use work.pkg.all;
 
 entity STAGE is
@@ -24,20 +26,21 @@ end STAGE;
 
 architecture STAGE of STAGE is	
 
+	-- ROM del escenario
 	constant STAGE1: STD_LOGIC_VECTOR(4 downto 0):= "00001";
-	constant STAGE2: STD_LOGIC_VECTOR(4 downto 0):= "00001";
+	constant STAGE2: STD_LOGIC_VECTOR(4 downto 0):= "00101";
 	constant STAGE3: STD_LOGIC_VECTOR(4 downto 0):= "00001";
-	constant STAGE4: STD_LOGIC_VECTOR(4 downto 0):= "00011";
-	constant STAGE5: STD_LOGIC_VECTOR(4 downto 0):= "00111";
-	constant STAGE6: STD_LOGIC_VECTOR(4 downto 0):= "00011";
+	constant STAGE4: STD_LOGIC_VECTOR(4 downto 0):= "00000";
+	constant STAGE5: STD_LOGIC_VECTOR(4 downto 0):= "00001";
+	constant STAGE6: STD_LOGIC_VECTOR(4 downto 0):= "00111";
 	constant STAGE7: STD_LOGIC_VECTOR(4 downto 0):= "00001";
-	constant STAGE8: STD_LOGIC_VECTOR(4 downto 0):= "00011";
-	constant STAGE9: STD_LOGIC_VECTOR(4 downto 0):= "00111";
-	constant STAGE10: STD_LOGIC_VECTOR(4 downto 0):= "01111";
-	constant STAGE11: STD_LOGIC_VECTOR(4 downto 0):= "01111";
-	constant STAGE12: STD_LOGIC_VECTOR(4 downto 0):= "00111";
+	constant STAGE8: STD_LOGIC_VECTOR(4 downto 0):= "00001";
+	constant STAGE9: STD_LOGIC_VECTOR(4 downto 0):= "00001";
+	constant STAGE10: STD_LOGIC_VECTOR(4 downto 0):= "00001";
+	constant STAGE11: STD_LOGIC_VECTOR(4 downto 0):= "00001";
+	constant STAGE12: STD_LOGIC_VECTOR(4 downto 0):= "00001";
 	constant STAGE13: STD_LOGIC_VECTOR(4 downto 0):= "00011";
-	constant STAGE14: STD_LOGIC_VECTOR(4 downto 0):= "00001";
+	constant STAGE14: STD_LOGIC_VECTOR(4 downto 0):= "00000";
 	constant STAGE15: STD_LOGIC_VECTOR(4 downto 0):= "00001";
 
 	signal DATA: STAGE_BLOCK;
@@ -46,6 +49,7 @@ begin
 	
 	BUS_DATA <= DATA;
 	
+	-- Dependiendo del indice dado, retornamos una ventana del escenario
 	process(INDEX) begin
 		
 		case INDEX is

@@ -3,34 +3,41 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=mario_segundo
+
 [Library]
 mario_segundo=.\mario_segundo\mario_segundo.lib
+
 [$LibMap$]
 mario_segundo=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=game|GAME|0  
+ShowHide=ShowTopLevel
+Selected=
+
 [Files]
 /MARIO.vhd=-1
 /STAGE.vhd=-1
-/COUNTER.vhd=-1
 /GAME.vhd=-1
 /TURTLE.vhd=-1
+
 [Files.Data]
 .\src\MARIO.vhd=VHDL Source Code
 .\src\STAGE.vhd=VHDL Source Code
-.\src\COUNTER.vhd=VHDL Source Code
 .\src\GAME.vhd=VHDL Source Code
 .\src\TURTLE.vhd=VHDL Source Code
-[SpecTracer]
-WindowVisible=0
-[HierarchyViewer]
-HierarchyInformation=game|GAME|0 mario|MARIO|0 turtle|TURTLE|0      
-ShowHide=ShowTopLevel
-Selected=
+
