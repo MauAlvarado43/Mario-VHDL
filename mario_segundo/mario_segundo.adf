@@ -25,7 +25,7 @@ FAMILY=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=game|GAME|0  
+HierarchyInformation=game|GAME|0 mario|MARIO|0   
 ShowHide=ShowTopLevel
 Selected=
 

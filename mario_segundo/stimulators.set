@@ -12,7 +12,7 @@
 			</stimulator>
 			<stimulator>
 				<signal_path value="/GAME/LEFT"/>
-				<rawdescription value="VAL:FRM:Override:0:&lt;= 0:1:"/>
+				<rawdescription value="VAL:FRM:Override:1:&lt;= 1:1:"/>
 			</stimulator>
 			<stimulator>
 				<signal_path value="/GAME/RIGHT"/>

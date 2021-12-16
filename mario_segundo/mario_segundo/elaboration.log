@@ -1,4 +1,4 @@
-Active-HDL 11.1.262.7351 2021-12-15 15:21:53
+Active-HDL 11.1.262.7351 2021-12-15 19:46:49
 
 Elaboration top modules:
 Architecture                  GAME(GAME)
@@ -31,3 +31,9 @@ ieee                    | Standard IEEE packages library
 mario_segundo           | None
 std                     | Standard VHDL library
 -----------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+GAME GAME GAME
+
+
+The performance of simulation is reduced. Version Student Edition

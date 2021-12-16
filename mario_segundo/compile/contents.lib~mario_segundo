@@ -1,9 +1,9 @@
-11
+14
 ~E 1 "../src/GAME.vhd" 7 GAME
-~A 1 "../src/GAME.vhd" 19 GAME
+~A 1 "../src/GAME.vhd" 21 GAME
 ~E 1 "../src/MARIO.vhd" 5 MARIO
-~A 1 "../src/MARIO.vhd" 17 MARIO
+~A 1 "../src/MARIO.vhd" 18 MARIO
 ~E 1 "../src/STAGE.vhd" 20 STAGE
 ~A 1 "../src/STAGE.vhd" 27 STAGE
-~E 1 "../src/TURTLE.vhd" 5 TURTLE
-~A 1 "../src/TURTLE.vhd" 15 TURTLE
+~E 1 "../src/TURTLE.vhd" 7 TURTLE
+~A 1 "../src/TURTLE.vhd" 17 TURTLE
